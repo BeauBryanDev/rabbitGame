@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rabbit Animation</title>
+<style>
+.rabbit {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  position: relative; /* Important for positioning the animation */
+  animation: moveUpDown 2s linear infinite; /* Adjust duration and timing */
+}
+
+.rabbit img { /* If using an image for the rabbit */
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0; /* Start at the top */
+  }
+  50% {
+    top: 50px; /* Move down */
+  }
+  100% {
+    top: 0; /* Back to the top */
+  }
+}
+</style>
+</head>
+<body>
+  <div class="rabbit">
+    <img src="rabbit.png" alt="Rabbit">  </div>
+
+</body>
+</html>
